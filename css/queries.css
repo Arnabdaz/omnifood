@@ -1,0 +1,395 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .testimonial-container {
+    padding: 6rem;
+  }
+
+  .testimonials {
+    column-gap: 4.8rem;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .hero-section {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .hero {
+    gap: 6rem;
+  }
+
+  .testimonial-container {
+    padding: 3.2rem;
+  }
+
+  /* .testimonial-gallary {
+    padding: 1.6rem;
+    gap: 1.6rem;
+  } */
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-section {
+    padding: 3.2rem 0 6.4rem 0;
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-customer {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 50%;
+  }
+
+  .logos {
+    height: 2.4rem;
+  }
+
+  .sec-num {
+    font-size: 7.4rem;
+  }
+
+  .meal-info {
+    padding: 2.4rem 2.4rem 3.2rem 3.2rem;
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  .testimonial-main-container {
+    grid-template-columns: 65fr 35fr;
+    gap: 0;
+  }
+
+  .testimonial-gallary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card {
+    padding: 3rem;
+    width: 80%;
+  }
+
+  .cta-div {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-form {
+    margin-top: 2.4rem;
+  }
+
+  /* MOBILE NAV */
+
+  .nav-menu-btn {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 500ms ease-in;
+
+    /* 1. visually hide navigation */
+    opacity: 0;
+
+    /* 2. hide nav from mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. hide from accessibility */
+    visibility: hidden;
+
+    /* 4. take to right of viewport */
+    transform: translateX(100%);
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .nav-menu-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .nav-menu-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .logos {
+    height: 2rem;
+  }
+
+  .testimonial-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-gallary {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid.testimonial-gallary {
+    padding: 1.6rem;
+    gap: 1rem;
+  }
+
+  .pricing-card {
+    padding: 3.6rem 2.09rem;
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 4.8rem;
+  }
+
+  .footer-social,
+  .footer-address {
+    grid-column: span 3;
+  }
+
+  .footer-nav {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .grid--2--cols,
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    column-gap: 2.4rem;
+    row-gap: 3.6rem;
+  }
+
+  .abtn,
+  .abtn:link,
+  .abtn:visited {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+    gap: 4.8rem;
+  }
+
+  .hero-img {
+    max-width: 90%;
+  }
+
+  .logos {
+    height: 1.5rem;
+  }
+
+  .app-img-div:nth-child(2) {
+    grid-row: 1;
+  }
+  .app-img-div:nth-child(6) {
+    grid-row: 5;
+  }
+  .app-img-div {
+    translate: 0 4rem;
+  }
+
+  .meal-info {
+    padding: 2.4rem 4.8rem 3.2rem 6rem;
+  }
+
+  .testimonial-img {
+    width: 15%;
+  }
+
+  .testimonial-gallary {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-card-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pricing-card {
+    padding: 3.6rem 4.8rem;
+    width: 85%;
+    justify-self: center;
+  }
+
+  .features-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-div {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-box {
+    padding: 0 3.2rem;
+  }
+
+  .cta-heading {
+    padding-bottom: 0;
+  }
+
+  .cta-img {
+    height: 40rem;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 23.5em) {
+  html {
+    font-size: 46.5%;
+  }
+}
+
+@media (max-width: 21.5em) {
+  html {
+    font-size: 41.5%;
+  }
+}
+
+@media (max-width: 19em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+/* Adding flexbox gap support for safari */
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}

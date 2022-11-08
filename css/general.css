@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 0.5rem #e67d2280;
+}
+
+/**********************************/
+/* REUSABLE SECTION */
+/**********************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.2rem;
+  column-gap: 5.2rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center--v {
+  align-items: center;
+}
+.grid--center--h {
+  justify-content: center;
+}
+
+.flex-gap-v {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.section-info {
+  /* margin-top: 9.6rem; */
+  color: #e47112;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.1;
+  margin-bottom: 9.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.abtn:link,
+.abtn:visited {
+  display: inline-block;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.abtn:link,
+.abtn:visited,
+.abtn:hover,
+.abtn:active {
+  transition: all 0.5s;
+}
+
+.abtn--main:link,
+.abtn--main:visited {
+  background-color: #e67e22;
+  color: #fff4e6;
+}
+
+.abtn--main:hover,
+.abtn--main:active {
+  background-color: #fd7e14;
+  transform: scale(1.05);
+}
+
+.abtn--secondary:link,
+.abtn--secondary:visited {
+  background-color: #fff;
+  color: #444;
+}
+
+.abtn--secondary:hover,
+.abtn--secondary:active {
+  background-color: #fff4e6;
+  box-shadow: inset 0 0 0 5px #fff;
+  transform: scale(1.05);
+}
+
+.abtn-margin-right {
+  margin-right: 2.4rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.text-align {
+  text-align: center;
+}
